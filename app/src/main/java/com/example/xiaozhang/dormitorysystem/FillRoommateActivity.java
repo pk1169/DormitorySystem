@@ -58,18 +58,31 @@ public class FillRoommateActivity extends AppCompatActivity implements View.OnCl
 
         Integer number = Integer.parseInt(pref.getString("number","0"));
         switch(number) {
+            case 1:
+                stuid1.setVisibility(View.INVISIBLE);
+                code1.setVisibility(View.INVISIBLE);
+                stuid2.setVisibility(View.INVISIBLE);
+                code2.setVisibility(View.INVISIBLE);
+                stuid3.setVisibility(View.INVISIBLE);
+                code3.setVisibility(View.INVISIBLE);
+                stuidt1.setVisibility(View.INVISIBLE);
+                vcodet1.setVisibility(View.INVISIBLE);
+                stuidt2.setVisibility(View.INVISIBLE);
+                vcodet2.setVisibility(View.INVISIBLE);
+                stuidt3.setVisibility(View.INVISIBLE);
+                vcodet3.setVisibility(View.INVISIBLE);
             case 2:
-                stuid2.setVisibility(View.GONE);
-                code2.setVisibility(View.GONE);
-                stuid3.setVisibility(View.GONE);
-                code3.setVisibility(View.GONE);
+                stuid2.setVisibility(View.INVISIBLE);
+                code2.setVisibility(View.INVISIBLE);
+                stuid3.setVisibility(View.INVISIBLE);
+                code3.setVisibility(View.INVISIBLE);
                 stuidt2.setVisibility(View.INVISIBLE);
                 vcodet2.setVisibility(View.INVISIBLE);
                 stuidt3.setVisibility(View.INVISIBLE);
                 vcodet3.setVisibility(View.INVISIBLE);
             case 3:
-                stuid3.setVisibility(View.GONE);
-                code3.setVisibility(View.GONE);
+                stuid3.setVisibility(View.INVISIBLE);
+                code3.setVisibility(View.INVISIBLE);
                 stuidt3.setVisibility(View.INVISIBLE);
                 vcodet3.setVisibility(View.INVISIBLE);
         }

@@ -46,7 +46,9 @@ public class SelectionActivity extends AppCompatActivity implements View.OnClick
             case R.id.one_person:
                 editor.putString("number","1");
                 editor.commit();
+                Intent intent0 = new Intent(SelectionActivity.this, FillRoommateActivity.class);
                 Log.d("个人选","宿舍");
+                startActivity(intent0);
                 break;
             case R.id.two_person:
                 editor.putString("number", "2");
